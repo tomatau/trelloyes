@@ -9,9 +9,9 @@ export default function List(props) {
         <h2>{props.header}</h2>
       </header>
       <div className='List-cards'>
-        {props.cards.map((card, i) =>
+        {props.cards.map((card) =>
           <Card
-            key={i}
+            key={card.id}
             title={card.title}
             content={card.content}
           />
