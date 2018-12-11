@@ -7,8 +7,8 @@
   color: #17394d;
 }
 
-.Card:not(:first-of-type) {
-  margin-top: 10px;
+.Card {
+  margin-bottom: 10px;
 }
 
 .Card h3 {
@@ -19,4 +19,10 @@
 .Card p {
   margin: 0;
   font-size: 12px;
+}
+
+.Card button {
+  float: right;
+  background-color: #eff1f3;
+  border-radius: 6px;
 }
