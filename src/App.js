@@ -49,9 +49,12 @@ class App extends Component {
 
     const newLists = this.state.store.lists.map(list => {
       if (list.id === listId) {
-        list.cardIds.push(newCard.id)
+	return {
+          ...list,
+          cardIds: [...list.cardIds, newCard.id]
+        };
       }
-      return list
+      return list;
     })
 
     this.setState({
